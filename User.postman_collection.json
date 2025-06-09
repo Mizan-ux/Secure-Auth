@@ -1,0 +1,157 @@
+{
+	"info": {
+		"_postman_id": "5bc7525e-1a8e-40c2-961c-68ff91a11ce2",
+		"name": "User",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "37553868"
+	},
+	"item": [
+		{
+			"name": "verify",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"MizanMulani\",\r\n    \"email\":\"two@one.com\",\r\n    \"password\":\"1234567A91\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/api/v1/users/verify/9e0f706478ea46b8128c9470b42b358663bb73d310dbe1cadebad8860ec06759"
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"nekonozy@peko.com\",\r\n    \"password\":\"A123456\"\r\n}"
+				},
+				"url": "http://localhost:3000/api/v1/users/login"
+			},
+			"response": []
+		},
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Mizandone\",\r\n    \"email\":\"nekonozy@peko.com\",\r\n    \"password\":\"A123456\"\r\n}"
+				},
+				"url": "http://localhost:3000/api/v1/users/register"
+			},
+			"response": []
+		},
+		{
+			"name": "profile",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"MizanMulani\",\r\n    \"email\":\"two@one.com\",\r\n    \"password\":\"1234567A91\"\r\n}"
+				},
+				"url": "http://localhost:3000/api/v1/users/me"
+			},
+			"response": []
+		},
+		{
+			"name": "logout",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": "http://localhost:3000/api/v1/users/logout"
+			},
+			"response": []
+		},
+		{
+			"name": "forgotPassword",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"nekonozy@peko.com\"\r\n}"
+				},
+				"url": "http://localhost:3000/api/v1/users/forgotpassword"
+			},
+			"response": []
+		},
+		{
+			"name": "resetPassword",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"confirmPassword\":\"A123456\",\r\n    \"password\":\"A123456\"\r\n}"
+				},
+				"url": "http://localhost:3000/api/v1/users/resetpassword/14888030bad1dda9ccc77ae5851384cc88354e25d56c7a803bac0ee395bae253"
+			},
+			"response": []
+		}
+	]
+}
