@@ -1,4 +1,4 @@
-# 🔐 Secure Authentication Backend (Node.js + MongoDB)
+# 🔐 Secure Authentication Backend (Node.js + MongoDB + Express.js)
 
 This is a complete authentication backend built using **Node.js**, **Express**, and **MongoDB**
 with advanced features like email verification, JWT-based login, password reset, and route protection. 
